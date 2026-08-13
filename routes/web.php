@@ -5,7 +5,7 @@ use App\Http\Controller\barangcontroller;
 use App\Http\Controller\kategoricontroller;
 use App\Http\Controller\pengajuancontroller;
 use App\Http\Controller\penyusutancontroller;
-use App\Http\Controller\stockcontroller;
+use App\Http\Controller\stokcontroller;
 
 /*
 |--------------------------------------------------------------------------
@@ -60,10 +60,10 @@ Route::put('/penyusutan/{id}', 'penyusutancontroller@update')->name('penyusutan.
 Route::delete('/penyusutan/{id}', 'penyusutancontroller@destroy')->name('penyusutan.destroy');
 
 // Stock
-Route::get('/stock', 'stockcontroller@index')->name('stock.index');
-Route::get('/stock/create', 'stockcontroller@create')->name('stock.create');
-Route::post('/stock', 'stockcontroller@store')->name('stock.store');
-Route::get('/stock/{id}', 'stockcontroller@show')->name('stock.show');
-Route::get('/stock/{id}/edit', 'stockcontroller@edit')->name('stock.edit');
-Route::put('/stock/{id}', 'stockcontroller@update')->name('stock.update');
-Route::delete('/stock/{id}', 'stockcontroller@destroy')->name('stock.destroy');
+Route::get('/stok', 'stokcontroller@index')->name('stok.index');
+Route::get('/stok/create', 'stokcontroller@create')->name('stok.create');
+Route::post('/stok', 'stokcontroller@store')->name('stok.store');
+Route::get('/stok/{id}', 'stokcontroller@show')->name('stok.show');
+Route::get('/stok/{id}/edit', 'stokcontroller@edit')->name('stok.edit');
+Route::put('/stok/{id}', 'stokcontroller@update')->name('stok.update');
+Route::delete('/stok/{id}', 'stokcontroller@destroy')->name('stok.destroy');
