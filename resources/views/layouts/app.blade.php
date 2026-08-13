@@ -32,7 +32,7 @@
 
 
     {{-- =====================================================
-         SIDEBAR TOGGLE CSS
+         SIDEBAR & TOPBAR TOGGLE CSS
     ====================================================== --}}
     <style>
 
@@ -57,6 +57,38 @@
             transition:
                 margin-left 0.3s ease,
                 width 0.3s ease;
+        }
+
+
+        /* =====================================================
+           TOPBAR HEADER (DORONG KE POJOK KANAN)
+        ====================================================== */
+
+        .admin-topbar {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            padding: 12px 24px;
+            width: 100%;
+        }
+
+        .topbar-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .topbar-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-left: auto; /* Memastikan grup kanan berada di pojok kanan */
+        }
+
+        .topbar-search {
+            display: flex;
+            align-items: center;
+            position: relative;
         }
 
 
