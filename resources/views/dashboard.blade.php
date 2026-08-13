@@ -6,11 +6,22 @@
 
 <div class="container-fluid">
 
-    <div class="mb-4">
-        <h1>Dashboard</h1>
-        <p class="text-muted">
-            Sistem Informasi Inventaris Aset Sekolah
-        </p>
+    <!-- Header Dashboard & Tombol Logout -->
+    <div class="mb-4 d-flex justify-content-between align-items-center">
+        <div>
+            <h1 class="mb-0">Dashboard</h1>
+            <p class="text-muted mb-0">
+                Sistem Informasi Inventaris Aset Sekolah
+            </p>
+        </div>
+
+        <!-- Tombol Logout -->
+        <form action="{{ route('logout') }}" method="POST">
+            @csrf
+            <button type="submit" class="btn btn-danger">
+                <i class="bi bi-box-arrow-right me-1"></i> Logout
+            </button>
+        </form>
     </div>
 
     <div class="row">
